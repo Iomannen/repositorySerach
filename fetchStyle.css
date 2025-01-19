@@ -54,6 +54,7 @@ input {
 }
 .svgCross:hover {
     width: 21px;
+    cursor:pointer;
 }
 .reposrepositoryBase__stars {
     position: relative;
