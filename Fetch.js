@@ -128,6 +128,7 @@ async function fetchInput() {
     
   } else {
     console.log("Ошибка HTTP: " + response.status);
+    if (response.status === 403) alert('403 Error, please refresh the page or wait a little bit and maybe it will work out')
   }
 }
 function debounce(func, ms) { // просто дебаунс
