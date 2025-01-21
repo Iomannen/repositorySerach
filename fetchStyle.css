@@ -55,6 +55,7 @@ input {
 .svgCross:hover {
     width: 21px;
     cursor:pointer;
+    
 }
 .reposrepositoryBase__stars {
     position: relative;
@@ -71,3 +72,39 @@ input {
     visibility: hidden;
     opacity: 0;
 }
+.bodyInputDiv {
+position: relative
+}
+.spinner {
+    position: absolute;
+    right: 10px;
+    top: 34px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid rgb(185, 185, 185);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .hiddenFullName {
+    display: none;
+  }
+  .tooltip {
+    height: 30px;
+    width: 150px;
+    text-align: center; 
+    padding-top: 8px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(248, 191, 5);
+    top: 50px;
+  }
