@@ -5,15 +5,16 @@
             <link rel="stylesheet" href="fetchStyle.css">
         </head>
         <body>
+            <span class="tooltip" role="tooltip" id="tooltip" style="visibility: hidden; opacity: 0;">Ничего не найдено</span>
             <div id="bodyDiv" class="bodyInputDiv">
-                <input class ="inputClass" list="searchDatalist" type="text" id="search">
+                <div id="spinner" class="spinner" style="display: none;"></div>
+                <input class ="inputClass" list="searchDatalist" type="text" id="search" aria-labelledby="tooltip">
             </div>
             <ul class="repositoryBase">
                 </ul>
             </div>
         </body> 
         <script src="Fetch.js"></script>
-        <script src="crossButtonListener.js"></script>
 </html>
         
 
