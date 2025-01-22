@@ -30,7 +30,7 @@ async function fetchInput() {
       }  
     })  
     input.oninput = () => listener(jsonResponse);
-  }
+  } else removeOptions()
 }
 
 function addOptions(object, index) {
